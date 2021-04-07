@@ -1,0 +1,230 @@
+@charset"UTF-8";
+
+/* ヘッダー */
+.nav li{
+    list-style: none;
+    
+}
+.nav ul{
+    margin: 0px;
+    display: flex;
+    justify-content: space-between; 
+}
+header{
+    display: flex;
+    justify-content: space-between; 
+    width: 980px;
+    height: 60px;
+    margin: auto;
+    align-items: center;
+   
+}
+.nav__item{
+    font-size: 18px;
+    font-family: "Yu Gothic";
+    margin-right: 44px;
+}
+/*ヘッダーメディアクエリ*/
+@media (max-width:979px) {
+header{
+   flex-direction: column;
+   width: 100%;
+   height: 88px;
+   align-items: center;
+   margin-bottom: 0px;
+   
+}
+header h1{
+    font-size: 0;
+}
+header img{
+    height: 35px;
+}
+.nav__item{ 
+   font-size: 16px; /*無効になってしまう。*/
+   font-family: "Yu Gothic";
+   font-weight: 6px;
+}
+
+    }
+
+
+/*メインビジュアル*/
+.main__visual img{
+    width: 100%;
+}
+/*メインビジュアルメディアクエリ (確認)*/ 
+@media (max-width:979px){
+    .main__visual img{
+        object-fit: cover; 
+        height: 360px;
+    }
+    
+}
+
+/*メニュー*/
+.menu{
+    margin: 73px 181px 110px 181px;
+    text-align: center;
+}
+.menu h2{
+    font-size: 30px;
+    font-family: "Yu Gothic";
+    margin-top: 73px;
+    display: inline-block;
+    border-bottom: solid medium #F2632D;
+    line-height: 51px;
+    
+    
+}
+
+.menu__item{
+    list-style: none;
+    
+}
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    
+}
+.menu__imgbox{
+    margin-top: 89px;
+}
+.menu__textbox{
+    text-align: center;
+    font-family: "Yu Gothic";
+}
+.menu__text{
+    font-size: 28px;
+    font-weight: 6px;
+    margin-top: 24px;
+}
+.menu__desc{
+    font-size: 20px;
+    font-weight: 3px;
+    margin-top: 20px;
+}
+/*メニューメディアクエリ*/
+@media (max-width:979px){
+    .menu{
+        margin: 64px 47px 76px 48px;
+    }
+    .menu__list{
+     flex-direction: column;
+    }
+    .menu__desc{
+        font-size: 16px;
+        margin: 0;
+    }
+    .menu__text{
+        margin: 10px 8px;
+    }
+    .menu__imgbox{
+        margin: 0px;
+    }
+    .menu__textbox{
+        margin-bottom: 45px;
+    }
+    .menu__imgbox img{
+        max-width: 100%;
+    }
+}
+
+
+
+/*アバウト*/
+.about{
+    margin: 110px 150px 191px 150px;
+    text-align: center;
+}
+.about h2{
+    font-size: 30px;
+    font-family: "Yu Gothic";
+    display: inline-block;
+    border-bottom: solid medium #F2632D;
+    line-height: 51px;
+    margin-bottom: 39px;
+    
+}
+.about__imgbox{
+    display: flex;
+    justify-content: flex-end;
+}
+.about__textbox{
+    font-family: "Yu Gothic";
+    width: 50%;
+    text-align: left;
+}
+.about__text{
+    font-size: 26px;
+    font-weight: 6px;
+    margin:0px 212px 0px 0px;
+}
+.about__desc{
+    font-size: 18px;
+    font-weight: 3px;
+    margin: 55px 168px 65px 0px;
+}
+.about__btn{
+    display:inline-block;
+    border-radius :25px;
+    border: solid 3px #F2632D
+}
+.btn__item{
+    font-size: 18px;
+    font-family: "Yu Gothic";
+    font-weight: 6px;
+    color: #F2632D;
+    margin: 12px 40px;
+}
+.about img{
+    width: 50%;
+    object-fit: cover;
+}
+/*アバウトメディアクエリ*/
+@media (max-width:979px){
+    .about{
+        margin: 0px 15px 100px 15px;
+    }
+    .about__imgbox{
+        flex-direction: column;
+    }
+    .about__text{
+        font-size: 25px;
+        margin: 35px 0px 22px 0px;
+    }
+    .about__desc{
+        font-size: 15px;
+        margin: 22px 0px 25px 0px;
+    }
+    .about__textbox{
+        text-align: center;
+        width: 100%;
+    }
+    .about__btn{
+        margin: 25px 100px 50px 100px;
+    }
+    .about img{
+        width: 100%;
+        margin: 50px 0px 60px 0px;
+    }
+}
+
+/*フッター*/
+footer{
+    background-color: #D5D5D5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer__title{
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    font-family: "Yu Gothic";
+    font-weight: 3px;
+    color: #FFFFFF;
+}
+
+
